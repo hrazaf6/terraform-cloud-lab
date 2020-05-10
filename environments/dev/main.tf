@@ -8,7 +8,7 @@ module "web_cluster" {
   instance_type     = "t2.micro"
   cluster_name      = var.cluster_name
   max_instance_size = 3
-  min_instance_size = 2
+  min_instance_size = 3
   private_subnets   = module.vpc.private_subnets
   vpc_id            = module.vpc.vpc_id
 }
